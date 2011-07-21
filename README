@@ -1,0 +1,32 @@
+1. Overview
+
+CmdLauncher is a project aimed at help people launch a command in a graphical
+way. CmdLauncher is based on Qt and works on Linux, Mac OS X and MS-Windows,
+and maybe FreeBSD, NetBSD.If you are a developer and you have developed a
+console program, you could use CmdLauncher to let your program launch in a
+graphical way so that people who are not computer experts can also use it.
+
+2. Install
+
+On UNIX/Linux:
+
+First make sure that you have installed cmake, Qt4 and its develop tools. Then
+depress the source arhive and switch to the source directory of this project
+and use the following commands to compile it:
+
+$ cmake .
+$ make
+
+To install it:
+
+# make install
+
+For other platform, just use cmake to generate the project file and use your
+favorate compiler to build it.
+
+3. Usage
+
+To use it, create a file storing the information of your command first, for
+example "example.cla". Edit this file with a text editor. The format of this
+file could be reffered to sample.cla. Execute "cmdlauncher sample.cla" to see
+how it works.
